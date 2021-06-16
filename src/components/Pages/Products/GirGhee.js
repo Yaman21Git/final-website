@@ -321,13 +321,13 @@ class GirGhee extends Component{
                   <span className="span1"><img src={imgstar}/></span><span className="span2">Based on {product.rating.total / 5} reviews.</span>
                   <p><textarea rows="4" cols="50" name="comment" placeholder=" Review" name="message" value={message} onChange={this.handleChange}></textarea></p>
                   <span className="btn"><button className="spnbtn" onClick={this.handleReview}>Write a Review.</button></span>
-                  <ul>
+                  <ul className="review-contain">
                   { product.reviews.map((review, i) => (
                       <li className="remBullet" key={i}>
-                        <span className="span0">{review.summary}</span>
+                        <span className="review-sum">{review.summary}</span>
                         <span className="span1"><img src={imgstar}/></span>
-                        <p className="p1">{review.name} {review.date}</p>
-                        <p className="p2">{review.details}</p>
+                        <p className="p1sum">{review.name} {review.date}</p>
+                        <p className="p2sum">{review.details}</p>
                       </li>
                   ))}
                   </ul>

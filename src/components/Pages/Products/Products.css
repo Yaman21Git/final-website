@@ -190,6 +190,25 @@ h2{
     width: 80%;
 }
 
+.review-container >p >textarea{
+    width:70%;
+    font-size:1.2vw;
+    font-family: 'Monserrat',sans-serif;
+    border: 1px solid black;
+    padding: 2%;
+    height: 7vw;
+    border-radius: 20px;
+    background-color: #F6EFE5;
+}
+
+.p1sum{
+    font-size: 1vw;
+}
+
+.p2sum{
+    font-size: 1.4vw;
+}
+
 .span0{
    font-family: 'Montserrat', sans-serif;
    font-size: 1vw;
@@ -411,6 +430,30 @@ h2{
 
     .reviews .review-container >h2{
         font-size: 3.2vw;
+    }
+
+    .review-container >p >textarea{
+        width:100%;
+        font-size:3.2vw;
+        height: 10vw;
+        border-radius: 15px;
+    }
+    
+    .p1sum{
+        font-size: 2.2vw;
+    }
+    
+    .p2sum{
+        font-size: 4.2vw;
+    }
+
+    .review-contain >li{
+        margin-bottom: 10%;
+        padding-top: 8%;
+    }
+
+    .review-contain >li .span1 >img{
+        margin-top: -5%;
     }
 
     .span1 >img{
