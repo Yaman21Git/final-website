@@ -1,0 +1,274 @@
+.blogBack{
+    width:100%;
+    height: 60vw;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.6%;
+}
+
+.blogBack >img{
+    width: 100%;
+    height: 90%;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Tangerine';
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+.blogBack .blackhead{
+    background-color: black;
+    color: white;
+    width: 62%;
+    height: 14%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Tangerine';
+    font-size: 3.6vw;
+    font-weight: 300;
+    padding-top: 2.4%;
+}
+
+.content{
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firstp{
+    margin-bottom: 3%;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+    text-align: left;
+}
+
+.greenery{
+    margin-top:6%;
+    margin-bottom:10%;
+    width: 96%;
+    height: 36vw;
+}
+
+.centerhead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4vw;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.secondp{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+    text-align: left;
+}
+
+.otherhead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vw;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+
+ul >li{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+}
+
+.lastp{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+    text-align: left;
+    margin-top: 7%;
+    margin-bottom: 14%;
+}
+
+.share{
+    margin-left: 48%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 1%;
+}
+
+.content .shopdot_first{
+    font-size: 2vw;
+}
+
+.comment-Blog{
+    padding-top: 5%;
+    text-align: center;
+}
+
+.comment-Blog >h2{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.comment-Blog .req{
+    width:30%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.8vw;
+}
+
+.comment-Blog .leaveus-reply{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.comment-Blog .leaveus-reply >p >input{
+    width:25%;
+    padding:0.6% 2% 0.6% 1%;
+    margin-bottom: 2%;
+    font-size: 1vw;
+    border:1px solid black;
+}
+
+.comment-Blog .leaveus-reply .comment{
+    height: 5vw;
+    padding-top: 0;
+}
+
+.comment-Blog .leaveus-reply >button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding:0.5% 1% 0.5% 1%;
+    font-size: 1vw;
+    margin-left: 16%;
+}
+
+@media screen and (max-width:680px){
+    .blogBack{
+        height:80vw;
+    }
+
+    .blogBack >img{
+        height:80%;
+    }
+
+    .centered {
+        color: wheat;
+        top: 64%;
+        width:80%;
+        height: 18vw;
+        padding-top: 4%;
+        background-color: black;
+        font-size: 12vw;
+    }
+
+    .blogBack .blackhead{
+        width: 80%;
+        height: 27%;
+        top:87%;
+        color: wheat;
+        font-size: 6vw;
+        font-weight: lighter;
+        padding-top: 8%;
+    }
+
+    .content{
+        width: 90%;
+        padding-top: 8%;
+    }
+
+    .firstp{
+        width: 90%;
+        font-size: 3.4vw;
+        margin-left: 6%;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .greenery{
+        height: 48vw;
+        margin-left: 2%;
+    }
+
+    .centerhead{
+        font-size: 4.6vw;
+    }
+
+    .secondp{
+        width:87%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.4vw;
+    }
+
+    .otherhead{
+        font-size: 4vw;
+        margin-left: 6%;
+    }
+
+    ul >li{
+        font-size: 3.4vw;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lastp{
+        font-size: 2.6vw;
+        width:87%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .share{
+        font-size: 3.6vw;
+        margin-left:43%;
+    }
+
+    .comment-Blog .req{
+        font-size: 2vw;
+        width: 76%;
+        margin-left: 12%;
+    }
+
+    .comment-Blog .leaveus-reply{
+        width:100%;
+        padding-right: 8%;
+    }
+
+    .comment-Blog >h2{
+        margin-right:-5%;
+        padding-right: 8%;
+        font-size: 3.6vw;
+    }
+
+    .comment-Blog .leaveus-reply >p >input{
+        width:65%;
+        margin-left: 6%;
+        font-size: 3vw;
+    }
+
+    .comment-Blog .leaveus-reply >button{
+        padding:0.7% 2% 0.7% 2%;
+        font-size: 2.4vw;
+        margin-left: 50%;
+    }
+
+    .content .nextpage{
+        font-size: 2.4vw;
+    }
+
+    .content .shopdot_first{
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-right: -10%;
+    }
+}
