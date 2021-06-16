@@ -198,7 +198,10 @@ class GirGhee extends Component{
                 pauseOnHover: false,
                 draggable: true,
             });
-            this.setState({product: result});
+            this.setState({
+                product: result,
+                message: ""
+            });
         })
     }
 
@@ -317,7 +320,7 @@ class GirGhee extends Component{
                   <h2>Customers Reviews</h2>
                   <span className="span1"><img src={imgstar}/></span><span className="span2">Based on {product.rating.total / 5} reviews.</span>
                   <p><textarea rows="4" cols="50" name="comment" placeholder=" Review" name="message" value={message} onChange={this.handleChange}></textarea></p>
-                  <span className="btn"><button className="spnbtn" onClick={thi.handleReview}>Write a Review.</button></span>
+                  <span className="btn"><button className="spnbtn" onClick={this.handleReview}>Write a Review.</button></span>
                   <ul>
                   { product.reviews.map((review, i) => (
                       <li className="remBullet" key={i}>
