@@ -4,7 +4,11 @@ import { Link, Redirect } from 'react-router-dom';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 function TrendingItem(props) {
+
+  
+  var flag = (props.text === "Royal Saffron White Honey" ? true : false);
 
   const addToCart = (e) => {
     e.preventDefault();
@@ -67,7 +71,11 @@ function TrendingItem(props) {
             />
           </figure>
           <div className='trending_item_info'>
-                <h2> {props.text} </h2>
+                { !flag ? 
+                  (<h2> {props.text} </h2> ) : 
+                  (<h2> {props.text} </h2> ) 
+                } 
+
               { !props.show && <h3> ₹ {props.price}.00 </h3> } 
               { !props.show && <Link onClick={event => addToCart(event)} style={{textDecoration:"none", cursor: "pointer"}} ><h5 className='trending_item_text'>Add to cart +</h5></Link>}
           </div>
