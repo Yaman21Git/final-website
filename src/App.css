@@ -2616,10 +2616,11 @@
 .user-info .username{
   font-size: 1.2vw;
   margin-left:20%;
+  margin-bottom: -9%;
 }
 
 .user-info .checkout-form{
-  margin-top: 7.5vw;
+  margin-top: 7vw;
   text-align: center;
   width:100%;
 }
