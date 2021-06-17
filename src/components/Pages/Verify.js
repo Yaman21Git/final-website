@@ -53,8 +53,12 @@ class Verify extends Component{
       }
       verifyPayment(deatils)
       .then(result => {
-         if(result === "failure")
+         if(result === "failure"){
             alert("Payment Unsuccessful!");
+            this.setState({
+               redirectToCart: true
+            });
+         }
          else{
             const order = {
                orderId: response.razorpay_order_id,
