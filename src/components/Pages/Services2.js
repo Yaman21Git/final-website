@@ -15,7 +15,7 @@ import img2 from '../../images2/127 Coriander-Powder.jpg'
 import img3 from '../../images2/139-Arhar.jpg'
 import img4 from '../../images2/142-Chana-.jpg'
 import img5 from '../../images2/149-Urad.jpg'
-import img6 from '../../images2/150-Wheat-Flour.jpg'
+import img6 from '../../images2/190Mango-Chutney.jpg'
 import img7 from '../../images2/pexels-tirachard-kumtanom-347140 1.jpg'
 import img8 from '../../images2/187-ghee-Badri.jpg'
 
@@ -24,9 +24,9 @@ const index1=[3,4,5];
 const index2=[6,7,8];
 
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
-const text=['Black Pepper Powder', 'Raw Forest Honey', 'Organic Coriander Powder','Organic Arhar Dal','Organic Chana Dal','Organic Urad Dal','Organic Wheat Flour','Luxury Gold Honey','Badri Ghee'];
-const price=[280, 615, 205, 165, 160, 260, 199, 1595, 1299];
-const path=['/products/60aaa63a2e79914b043dc0bc','/products/60aa9bf02e79914b043dc0b0','/products/60aaa9442e79914b043dc0c0','/products/60ab737b57cf811148043aa7','/products/60aa77933f3ca14f407dc629','/products/60aa7a753f3ca14f407dc62c','/products/60aa2bb368aee53db07ae16c','/products/60aea48122472a5940a04a28','/products/60acbacd444bd63a3835cf47'];
+const text=['Black Pepper Powder', 'Raw Forest Honey', 'Organic Coriander Powder','Organic Arhar Dal','Organic Chana Dal','Organic Urad Dal','Mango Chutney','Luxury Gold Honey','Badri Ghee'];
+const price=[280, 615, 205, 165, 160, 260, 369, 1595, 1299];
+const path=['/products/60aaa63a2e79914b043dc0bc','/products/60aa9bf02e79914b043dc0b0','/products/60aaa9442e79914b043dc0c0','/products/60ab737b57cf811148043aa7','/products/60aa77933f3ca14f407dc629','/products/60aa7a753f3ca14f407dc62c','/products/60aa6b933f3ca14f407dc623','/products/60aea48122472a5940a04a28','/products/60acbacd444bd63a3835cf47'];
 
 export default function Services2(){
     return (
