@@ -60,6 +60,7 @@ function TrendingItem(props) {
         pauseOnHover: false,
         draggable: true,
     });
+    window.location.reload();
   }
 
   return (

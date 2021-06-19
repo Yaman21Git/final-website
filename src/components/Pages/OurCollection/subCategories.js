@@ -73,7 +73,7 @@ class subCategories extends Component{
                         {window.innerWidth<=680 && index.map( (array, i) => (
                             <ul className='trends_items' style={{width:"100%"}}>
                             { array.map( (val, j) => (
-                                <TrendingItem src={products[val].photos[0]} text={products[val].name} path={`/products/${products[val]._id}`} price={products[val].price}/>
+                                <TrendingItem src={products[val].photos[1]} text={products[val].name} path={`/products/${products[val]._id}`} price={products[val].price}/>
                             ))}
                             </ul>
                         ))}

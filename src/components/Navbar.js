@@ -6,6 +6,8 @@ import imgSearch from '../images2/search_icon.jpg'
 import searchIcon from '../images2/Frame.png'
 import cartIcon from '../images2/Group.png'
 
+var array = JSON.parse(localStorage.getItem("cart"));
+var len = (array ? array.length : 0);
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -99,7 +101,7 @@ function Navbar() {
           <div className="icons">
             <Link to="/search"><img  className="search-icon" src={searchIcon} alt="search"/></Link>
             <Link to='/cart'><img className="cart-icon" src={cartIcon}/></Link>
-            <span className="items-in-cart">6</span>
+            <span className="items-in-cart">{len}</span>
           </div>
         </div>
       </nav>

@@ -329,7 +329,7 @@ class Cart extends Component {
                      <tbody>
                         { products && products.map((item, i) => (
                               <tr key={i} >
-                                 <th className="product1"><img className="smallImg" src={item.photos[0]}/> <p>{item.name}</p> <button className="remove-btn" onClick={() => this.removeItem(i, item.price)}>Remove</button> </th>
+                                 <th className="product1"><img className="smallImg" src={item.photos[1]}/> <p>{item.name}</p> <button className="remove-btn" onClick={() => this.removeItem(i, item.price)}>Remove</button> </th>
                                  <td className="price1">₹ {item.price}.00</td>
                                  {window.innerWidth>680&&<td className="price1">
                                     <button onClick={() => this.decrementValue(i, item.price)} className="quantity-btn" > - </button>

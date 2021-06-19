@@ -45,6 +45,7 @@ export default function CommonSix(){
             pauseOnHover: false,
             draggable: true,
         });
+        window.location.reload();
     }
 
     return (

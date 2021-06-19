@@ -118,6 +118,7 @@ class GirGhee extends Component{
         this.setState({
             redirectToCart: str
         })
+        window.location.reload()
     }
 
     onMousehover1 = e => {
@@ -341,7 +342,7 @@ class GirGhee extends Component{
                         {index.map( (array, i) => (
                             <ul className='trends_items' style={{width: "100%" }}>
                             { array.map( (val, j) => (
-                                (suggested[val] ? (<TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[val].price}/>) : (<TrendingItem src={img[val]} path={path[val]} price={price[val]} text={text[val]}/>))
+                                (suggested[val] ? (<TrendingItem src={suggested[val].photos[1]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[val].price}/>) : (<TrendingItem src={img[val]} path={path[val]} price={price[val]} text={text[val]}/>))
                             ))}
                             </ul>
                         ))}   
