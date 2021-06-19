@@ -62,6 +62,9 @@ class Cart extends Component {
          load(item.id)
          .then(result => {
             
+            if(!result){
+               return;
+            }
             cnt++;
             products[i] = result;
             total += item.quantity * result.price;
