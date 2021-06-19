@@ -328,11 +328,16 @@ class Cart extends Component {
                               <tr key={i} >
                                  <th className="product1"><img className="smallImg" src={item.photos[0]}/> <p>{item.name}</p> <button className="remove-btn" onClick={() => this.removeItem(i, item.price)}>Remove</button> </th>
                                  <td className="price1">₹ {item.price}.00</td>
-                                 <td className="price1">
+                                 {window.innerWidth>680&&<td className="price1">
+                                    <button onClick={() => this.decrementValue(i, item.price)} className="quantity-btn" > - </button>
+                                    <input type="text" value={cart[i].quantity} onChange={this.handleInput} size="2" className="number"/>
+                                    <button onClick= {() => this.incrementValue(i, item.price)} className="quantity-btn2" > + </button>
+                                 </td>}
+                                 {window.innerWidth<=680&&<td className="price1">
                                     <button onClick={() => this.decrementValue(i, item.price)} className="abc" > - </button>
                                     <input type="text" value={cart[i].quantity} onChange={this.handleInput} size="2" className="number"/>
                                     <button onClick= {() => this.incrementValue(i, item.price)} className="abc1" > + </button>
-                                 </td>
+                                 </td>}
                                  <td className="total1">₹ {item.price * cart[i].quantity}.00</td>
                               </tr>
                         ))}
