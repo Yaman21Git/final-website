@@ -23,18 +23,17 @@ class Verify extends Component{
    }
 
    componentDidMount = () => {
-      this.setState({
-         orderId: this.props.location.state.orderId,
-         a: this.props.location.state.amount,
-         c: this.props.location.state.cart
-      })
-      
-      if(this.state.orderId){
+      if(!this.props.location.state){
          this.setState({
             redirectToCart: true
          })
          return;
       }
+      this.setState({
+         orderId: this.props.location.state.orderId,
+         a: this.props.location.state.amount,
+         c: this.props.location.state.cart
+      })
    }
 
    confirmPayment = (response) => {
@@ -101,14 +100,33 @@ class Verify extends Component{
    }
 
    render(){
-      const { a, redirectToCart, redirectToAccount } = this.state;
+      const { a, c, orderId, redirectToCart, redirectToAccount } = this.state;
 
-      var byt, amount;
-      byt = CryptoJS.AES.decrypt(a, kftss);
-      amount = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var byt, byc, amount, cart;
+      if(c){
+         byt = CryptoJS.AES.decrypt(a, kftss);
+         byc  = CryptoJS.AES.decrypt(c, kftss);
+         
+         
+         amount = parseInt(byt.toString(CryptoJS.enc.Utf8));
+         cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
+      }
+
+      const details = {
+         orderId: orderId,
+         products: cart,
+         amount: amount,
+         name: userDetails().name,
+         email: userDetails().email,
+         phone: userDetails().phone,
+         address: userDetails().address
+      }
          
       if(redirectToAccount)
-         return <Redirect to='/services'></Redirect>
+         return <Redirect to={{
+            pathname: "/success",
+            state: { details: CryptoJS.AES.encrypt(JSON.stringify(details), kftss).toString() }
+         }} />
 
       if(redirectToCart)
          return <Redirect to='/cart'> </Redirect>

@@ -38,6 +38,7 @@ import Verify from './components/Pages/Verify'
 import terms from './components/Pages/terms&con'
 import Privacy from './components/Pages/PrivacyPolicy'
 import Free from './components/pageno'
+import Success from './components/Pages/Success';
 
 class App extends React.Component{
   render(){
@@ -76,6 +77,7 @@ class App extends React.Component{
              <Route exact path='/OurCollection/Limited-Edition' component={Breakfast}/>
              <Route exact path='/cart' component={Cart}/>
              <Route exact path='/cart/verify' component={Verify}/>
+             <Route exact path='/success' component={Success}/>
              <Route exact path='/search' component={Search}/>
              <Route exact path='/products/:productId' component={GirGhee}></Route>
              <Route exact path='/category/:category' component={subCategories}></Route>
