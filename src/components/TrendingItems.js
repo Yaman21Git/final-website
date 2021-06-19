@@ -6,9 +6,13 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 function TrendingItem(props) {
-
   
-  var flag = (props.text === "Royal Saffron White Honey" ? true : false);
+  var flag=false;
+  if(props.text==="Lakadong Turmeric Powder"||props.text==="Cold Pressed Groundnut Oil"||props.text==="Royal Saffron White Honey"){
+    flag=true;
+  }
+
+  // var flag = (props.text === "Royal Saffron White Honey" ? true : false);
 
   const addToCart = (e) => {
     e.preventDefault();
@@ -73,7 +77,7 @@ function TrendingItem(props) {
           <div className='trending_item_info'>
                 { !flag ? 
                   (<h2> {props.text} </h2> ) : 
-                  (<h2> {props.text} </h2> ) 
+                  (<h2 className="just-three"> {props.text} </h2> ) 
                 } 
 
               { !props.show && <h3> ₹ {props.price}.00 </h3> } 

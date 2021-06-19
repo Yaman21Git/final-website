@@ -2586,6 +2586,11 @@
   font-size: 1.6vw;
 }
 
+.yourCart .table >tbody >tr .price1 .number{
+  margin-right: -1%;
+  margin-left: -0.8%;
+}
+
 .remove-btn{
   background-color: black;
   margin-bottom: 10%;
@@ -2616,10 +2621,11 @@
 .user-info .username{
   font-size: 1.2vw;
   margin-left:20%;
+  margin-bottom: -9%;
 }
 
 .user-info .checkout-form{
-  margin-top: 7.5vw;
+  margin-top: 7vw;
   text-align: center;
   width:100%;
 }
@@ -2697,29 +2703,6 @@
   border-radius: 20px;
 }
 
-.table .abc{
-  font-size: 3vw;
-  max-height: 3vw;
-  width: 2vw;
-  margin-left: -1.9%;
-  position: absolute;
-  
-}
-
-.table .abc1{
-  font-size: 3vw;
-  width: 2vw;
-  max-height: 3vw;
-  margin-left: -0.09%;
-  position: absolute;
-}
-
-.table .number{
-  min-height: 3vw;
-  max-width: 3vw;
-  font-size: 2vw;
-}
-
 @media screen and (max-width:680px) {
   .yourCart{
     min-height: 85vw;
@@ -2735,28 +2718,6 @@
     margin-top: 10%;
     font-size: 2.4vw;
     padding: 1% 2% 1% 2%;
-  }
-
-  .table .abc{
-    font-size: 5vw;
-    min-width: 5vw;
-    max-height: 5vw;
-    position: absolute;
-    margin-left: -5.2%;
-  }
-
-  .table .abc1{
-    font-size: 5vw;
-    min-width: 5vw;
-    max-height: 5vw;
-    margin-left: -0.13%;
-    position: absolute;
-  }
-
-  .table .number{
-    min-height: 4vw;
-    min-width: 5vw;
-    font-size: 5vw;
   }
 
   .user-info{
@@ -2849,6 +2810,27 @@
   
   .yourCart .table >tbody >tr .total1{
     font-size: 3.4vw;
+  }
+
+  .yourCart .table >tbody >tr .price1 .abc{
+    min-width:5vw;
+    min-height: 6vw;
+    position: absolute;
+    margin-top: -4.6%;
+    margin-left: 0.3%;
+  }
+
+  .yourCart .table >tbody >tr .price1 .number{
+    min-height: 5.4vw;
+    margin-top: 10%;
+  }
+
+  .yourCart .table >tbody >tr .price1 .abc1{
+    min-width:5vw;
+    min-height: 6vw;
+    position: absolute;
+    margin-top: 7.2%;
+    margin-left: -5.6%;
   }
 
   .user-info .signout{

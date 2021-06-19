@@ -238,9 +238,9 @@ class GirGhee extends Component{
     render() {
         const {message, product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text, open, url} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
-        const style1 = window.innerWidth>680 ? (hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered1 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
-        const style2 = window.innerWidth>680 ? (hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered2 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
-        const style3 = window.innerWidth>680 ? (hovered3 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered3 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
+        const style1 = window.innerWidth>680 ? (hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered1 ? {position:"absolute",marginTop:"-150%",height:"120vw",width:"110%",marginLeft:"-5%"} : {display:"none"});
+        const style2 = window.innerWidth>680 ? (hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered2 ? {position:"absolute",marginTop:"-150%",height:"120vw",width:"110%",marginLeft:"-5%"} : {display:"none"});
+        const style3 = window.innerWidth>680 ? (hovered3 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered3 ? {position:"absolute",marginTop:"-150%",height:"120vw",width:"110%",marginLeft:"-5%"} : {display:"none"});
         
         if(redirect)
             return <Redirect to="/signin"></Redirect>

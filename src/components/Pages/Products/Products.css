@@ -295,13 +295,13 @@ h2{
 
 @media screen and (max-width:680px) {
     .pdtImages{
-        height:180vw;
+        height:190vw;
         padding-top: 0;
         padding-left: 0;
     }
 
     .pdtImages .images{
-        height:74%;
+        height:76%;
         width:100%;
     }
 
@@ -394,7 +394,7 @@ h2{
 
     .productDes{
         width:100%;
-        height:210vw;
+        height: 230vw;
         padding-top: 25%;
         padding-left: 8%;
         padding-right: 6%;

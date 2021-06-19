@@ -99,6 +99,7 @@ function Navbar() {
           <div className="icons">
             <Link to="/search"><img  className="search-icon" src={searchIcon} alt="search"/></Link>
             <Link to='/cart'><img className="cart-icon" src={cartIcon}/></Link>
+            <span className="items-in-cart">6</span>
           </div>
         </div>
       </nav>
