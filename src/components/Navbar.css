@@ -119,10 +119,10 @@
 }
 
 .icons .items-in-cart{
-  background-color: rgb(113, 138, 248);
+  background-color: white;
   font-size: 1.2vw;
   padding-top: 0.1%;
-  color: white;
+  color: black;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -131,6 +131,14 @@
   position: absolute;
   margin-left: 3%;
   margin-top: -1%;
+}
+
+.hidden{
+  position:absolute;
+  left:36%;
+  height:100%;
+  width:5%;
+  background-color:black;
 }
 
 @media screen and (max-width:800px){
@@ -324,5 +332,17 @@
     max-height: 5.4vw;
     margin-top: 1%;
     margin-left: -3%;
+  }
+
+  .icons .items-in-cart{
+    font-size: 3vw;
+    height: 4vw;
+    width:4vw;
+    margin-left: -5.4%;
+    margin-top: -1%;
+  }
+
+  .hidden{
+    left:27%;
   }
 }

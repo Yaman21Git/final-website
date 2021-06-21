@@ -8,6 +8,8 @@ import cartIcon from '../images2/Group.png'
 
 var array = JSON.parse(localStorage.getItem("cart"));
 var len = (array ? array.length : 0);
+var flag=len>=1?true:false;
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -42,7 +44,7 @@ function Navbar() {
 </svg> */}
             <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
           </div>
-          <div style={{position:"absolute", left:"27%",height:"100%",width:"5%",backgroundColor:"black"}}></div>
+          <div className="hidden"></div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
@@ -101,7 +103,7 @@ function Navbar() {
           <div className="icons">
             <Link to="/search"><img  className="search-icon" src={searchIcon} alt="search"/></Link>
             <Link to='/cart'><img className="cart-icon" src={cartIcon}/></Link>
-            <span className="items-in-cart">{len}</span>
+            {flag&&<span className="items-in-cart">{len}</span>}
           </div>
         </div>
       </nav>

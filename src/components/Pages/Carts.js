@@ -354,7 +354,8 @@ class Cart extends Component {
                      { error && <div className="error-message"><h3>***{error}***</h3> </div>}
                      <input className="info" type="text" name="name" value={name} placeholder="Your Name*"  onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <input className="info" type="email" name="email" value={email} placeholder="Email Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
-                     <input className="info" type="number" name="phone" value={phone} placeholder="Contact Number*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
+                     <input className="info1 info" type="number" name="phone" value={phone} placeholder="Contact Number*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
+                     <input className="info2 info" type="number" name="pincode" placeholder="Pincode*"></input>
                      <textarea className="info-address" name="address" value={address} placeholder="Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></textarea>
                      <p className="total-amount">
                         {cart.length > 0 && <p>Total Amount: ₹ {total + delivery}.00</p>} 

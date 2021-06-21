@@ -2640,6 +2640,15 @@
   background: none;
 }
 
+.user-info .checkout-form .info1{
+  width: 45%;
+}
+
+.user-info .checkout-form .info2{
+  width:30%;
+  margin-left: 5%;
+}
+
 .user-info .checkout-form .info-address{
   width: 80%;
   height: 10vw;
@@ -2736,6 +2745,15 @@
     font-size: 3vw;
   }
 
+  .user-info .checkout-form .info1{
+    width: 53%;
+  }
+  
+  .user-info .checkout-form .info2{
+    width:25%;
+    margin-left: 2%;
+  }
+
   .user-info .checkout-form .info-address{
     font-size: 3.4vw;
     margin-right: 15%;
@@ -2816,13 +2834,14 @@
     min-width:5vw;
     min-height: 6vw;
     position: absolute;
-    margin-top: -4.6%;
+    margin-top: -4.4%;
     margin-left: 0.3%;
   }
 
   .yourCart .table >tbody >tr .price1 .number{
     min-height: 5.4vw;
     margin-top: 10%;
+    margin-left: 2%;
   }
 
   .yourCart .table >tbody >tr .price1 .abc1{
@@ -2830,7 +2849,7 @@
     min-height: 6vw;
     position: absolute;
     margin-top: 7.2%;
-    margin-left: -5.6%;
+    margin-left: -6.1%;
   }
 
   .user-info .signout{
