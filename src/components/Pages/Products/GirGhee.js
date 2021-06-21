@@ -118,7 +118,7 @@ class GirGhee extends Component{
         this.setState({
             redirectToCart: str
         })
-        window.location.reload()
+        // window.location.reload()
     }
 
     onMousehover1 = e => {
@@ -260,9 +260,9 @@ class GirGhee extends Component{
                         <img className="small" src={product.photos[3]} onMouseOver={this.onMousehover3} onMouseOut={this.onMouseout3}/>
                     </div>
                     <div className="pdtMatter">
-                        {hovered1 && <div className="hover1" style={style1}><img className="imghovered" src={product.photos[1]}/> </div>}
-                        {hovered2 && <div className="hover2" style={style2}><img className="imghovered" src={product.photos[2]}/> </div>}
-                        {hovered3 && <div className="hover3" style={style3}><img className="imghovered" src={product.photos[3]}/> </div>}
+                        {hovered1 && <div className="hover1" style={style1}><img className="imghovered" src={product.photos[2]}/> </div>}
+                        {hovered2 && <div className="hover2" style={style2}><img className="imghovered" src={product.photos[3]}/> </div>}
+                        {hovered3 && <div className="hover3" style={style3}><img className="imghovered" src={product.photos[4]}/> </div>}
                         <h1>{product.name}</h1>
                         <h2>₹ {product.price}.00</h2>
                         <p>
