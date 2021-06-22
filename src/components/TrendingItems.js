@@ -26,7 +26,8 @@ function TrendingItem(props) {
         const details = {
             id: productId,
             name: props.text,
-            quantity: 1
+            quantity: 1,
+            price: props.price
         }
         localStorage.setItem("cart", JSON.stringify([details]));
     }
@@ -45,7 +46,8 @@ function TrendingItem(props) {
             const details = {
                 id: productId,
                 name: props.text,
-                quantity: 1
+                quantity: 1,
+                price: props.price
             }
             array.push(details);
         }

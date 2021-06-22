@@ -80,7 +80,8 @@ class GirGhee extends Component{
             const details = {
                 id: productId,
                 name: product.name,
-                quantity: quantity
+                quantity: quantity,
+                price: product.price
             }
             localStorage.setItem("cart", JSON.stringify([details]));
         }
@@ -99,7 +100,8 @@ class GirGhee extends Component{
                 const details = {
                     id: productId,
                     name: product.name,
-                    quantity: quantity
+                    quantity: quantity,
+                    price: product.price
                 }
                 array.push(details);
             }

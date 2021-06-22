@@ -14,6 +14,7 @@ class Verify extends Component{
       super()
       this.state = {
          orderId: "",
+         d: "",
          a:  "",
          c: "",
          version: 0,
@@ -32,17 +33,20 @@ class Verify extends Component{
       this.setState({
          orderId: this.props.location.state.orderId,
          a: this.props.location.state.amount,
-         c: this.props.location.state.cart
+         c: this.props.location.state.cart,
+         d: this.props.location.state.delivery, 
       })
    }
 
    confirmPayment = (response) => {
-      const {a, c} = this.state;
+      const {a, c, d} = this.state;
       
       var byt = CryptoJS.AES.decrypt(a, kftss);
-      var byc  = CryptoJS.AES.decrypt(c, kftss);
+      var byc = CryptoJS.AES.decrypt(c, kftss);
+      var byd = CryptoJS.AES.decrypt(d, kftss);
 
       var amount = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var delivery = parseInt(byd.toString(CryptoJS.enc.Utf8));
       var cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
 
       const deatils = {
@@ -63,16 +67,17 @@ class Verify extends Component{
                orderId: response.razorpay_order_id,
                paymentId: response.razorpay_payment_id,
                products: cart,
+               delivery: delivery,
                amount: amount,
                name: userDetails().name,
                email: userDetails().email,
                phone: userDetails().phone,
-               address: userDetails().address
+               address: userDetails().address,
+               zip: userDetails().pincode
             }
 
             addOrder(order)
             .then(result => {
-               alert("Payment Successful! \nPlease check your email for the order details");
                localStorage.setItem("cart", JSON.stringify([]));
                this.setState({
                   redirectToAccount: true
@@ -106,8 +111,6 @@ class Verify extends Component{
       if(c){
          byt = CryptoJS.AES.decrypt(a, kftss);
          byc  = CryptoJS.AES.decrypt(c, kftss);
-         
-         
          amount = parseInt(byt.toString(CryptoJS.enc.Utf8));
          cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
       }
