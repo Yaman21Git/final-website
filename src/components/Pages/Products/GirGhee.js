@@ -80,7 +80,8 @@ class GirGhee extends Component{
             const details = {
                 id: productId,
                 name: product.name,
-                quantity: quantity
+                quantity: quantity,
+                price: product.price
             }
             localStorage.setItem("cart", JSON.stringify([details]));
         }
@@ -99,7 +100,8 @@ class GirGhee extends Component{
                 const details = {
                     id: productId,
                     name: product.name,
-                    quantity: quantity
+                    quantity: quantity,
+                    price: product.price
                 }
                 array.push(details);
             }
@@ -109,7 +111,7 @@ class GirGhee extends Component{
             <h6>Item added to cart</h6>
             </div>, {
             position: "top-center",
-            autoClose: true,
+            autoClose: false,
             closeOnClick: true,
             pauseOnHover: false,
             draggable: true,
@@ -118,7 +120,7 @@ class GirGhee extends Component{
         this.setState({
             redirectToCart: str
         })
-        // window.location.reload()
+        window.location.reload()
     }
 
     onMousehover1 = e => {

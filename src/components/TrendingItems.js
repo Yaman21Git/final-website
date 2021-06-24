@@ -26,7 +26,8 @@ function TrendingItem(props) {
         const details = {
             id: productId,
             name: props.text,
-            quantity: 1
+            quantity: 1,
+            price: props.price
         }
         localStorage.setItem("cart", JSON.stringify([details]));
     }
@@ -45,7 +46,8 @@ function TrendingItem(props) {
             const details = {
                 id: productId,
                 name: props.text,
-                quantity: 1
+                quantity: 1,
+                price: props.price
             }
             array.push(details);
         }
@@ -55,12 +57,12 @@ function TrendingItem(props) {
         <h6>Item added to cart</h6>
         </div>, {
         position: "top-center",
-        autoClose: true,
+        autoClose: false,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
     });
-    // window.location.reload();
+    window.location.reload();
   }
 
   return (

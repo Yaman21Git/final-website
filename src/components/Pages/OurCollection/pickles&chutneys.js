@@ -3,15 +3,15 @@ import {Link} from 'react-router-dom'
 import TrendingItem from '../../TrendingItems'
 import '../../Trending.css'
 
-import img0 from '../../../images2/144-Chitra-Kidney-Beans.jpg'
+import img0 from '../../../images2/139-Arhar.jpg'
 import img1 from '../../../images2/154-White-Rice-Basmati.jpg'
 import img2 from '../../../images2/150-Wheat-Flour.jpg'
 
 const index0=[0,1];
 
-const imgSrc=[img0,img1,img2]
-const text=['Pulses', 'Rice', 'Flour'];
-const path=['/category/pulses','/category/rice','/category/flour'];
+const imgSrc=[img0,img2]
+const text=['Pulses', 'Flour'];
+const path=['/category/pulses','/category/flour'];
 const show=[true, true, true];
 
 export default function Pickles(){

@@ -25,6 +25,7 @@ class Cart extends Component {
          phone: userDetails() ? userDetails().phone : "",
          address: userDetails() ? userDetails().address : "",
          email: userDetails() ? userDetails().email : "",
+         pincode: userDetails() ? userDetails().pincode : "",
          redirectToVerify: false,
          error: "",
          show: false,
@@ -67,6 +68,7 @@ class Cart extends Component {
             }
             cnt++;
             products[i] = result;
+            array[i].price = result.price;
             total += item.quantity * result.price;
             delivery = (total <= 499 ? 85 : 0);
             
@@ -94,32 +96,38 @@ class Cart extends Component {
    }
 
    isValid = () => {
-      const { name, phone, email, address, c } = this.state
+      const { name, phone, email, address, pincode, c } = this.state
       var bytes  = CryptoJS.AES.decrypt(c, kftss);
       var cart = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-
-      if (name === "" ) {
+      if (name === "" || !name) {
           this.setState({
               error: "Name is required"
           })
           return false;
       }
 
-      if (phone === "") {
+      if (phone === "" || !phone) {
          this.setState({
             error: "Phone Number is required"
          })
          return false;
       }
 
-     if (address === "") {
+      if (  pincode === "" || !pincode) {
+         this.setState({
+            error: "Pincode is required"
+         })
+         return false;
+      }
+
+     if (address === "" || !address) {
          this.setState({
             error: "Address is required"
          })
          return false;
       }
 
-      if(email === ""){
+      if(email === "" || !email){
          this.setState({
             error: "Email is required"
          })
@@ -140,6 +148,13 @@ class Cart extends Component {
          return false;
       }
 
+      if( pincode.length !== 6 ){
+         this.setState({
+            error: "Pincode is invalid"
+         })
+         return false;
+      }
+
       if(cart.length == 0){
          this.setState({
             error: "Please add item to your cart"
@@ -155,7 +170,7 @@ class Cart extends Component {
       if(!this.isValid()){
          return
       }
-      const {phone, name, address, email, t, d} = this.state
+      const {phone, name, address, email, pincode,  t, d} = this.state
       var byt = CryptoJS.AES.decrypt(t, kftss);
       var byd = CryptoJS.AES.decrypt(d, kftss);
 
@@ -177,7 +192,8 @@ class Cart extends Component {
             name: name,
             email: email,
             phone: phone,
-            address: address
+            address: address,
+            pincode: pincode
          }
          
          localStorage.setItem("user", JSON.stringify(user));
@@ -280,7 +296,7 @@ class Cart extends Component {
          c: cipherCart,
          p: cipherProduct
       })
-      // window.location.reload();
+      window.location.reload();
    }
    
    handleInput = (event) => {
@@ -288,7 +304,7 @@ class Cart extends Component {
    }
   
    render() {
-      const {t, d, c, p, show, name, email, phone, address, redirectToVerify, error, orderId} = this.state
+      const {t, d, c, p, show, name, email, pincode, phone, address, redirectToVerify, error, orderId} = this.state
 
       var byt, byd, byc, byp;
       var total, delivery, cart, products;
@@ -308,6 +324,7 @@ class Cart extends Component {
          return <Redirect to={{
             pathname: "/cart/verify",
             state: { orderId: orderId,
+                     delivery: CryptoJS.AES.encrypt(delivery.toString(), kftss).toString(), 
                      amount:  CryptoJS.AES.encrypt((total+delivery).toString(), kftss).toString(), 
                      cart: CryptoJS.AES.encrypt(JSON.stringify(cart), kftss).toString()
                   }
@@ -356,7 +373,7 @@ class Cart extends Component {
                      <input className="info" type="text" name="name" value={name} placeholder="Your Name*"  onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <input className="info" type="email" name="email" value={email} placeholder="Email Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <input className="info1 info" type="number" name="phone" value={phone} placeholder="Contact Number*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
-                     <input className="info2 info" type="number" name="pincode" placeholder="Pincode*"></input>
+                     <input className="info2 info" type="number" name="pincode" value={pincode} placeholder="Pincode*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <textarea className="info-address" name="address" value={address} placeholder="Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></textarea>
                      <p className="total-amount">
                         {cart.length > 0 && <p>Total Amount: ₹ {total + delivery}.00</p>} 
