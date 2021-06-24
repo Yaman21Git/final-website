@@ -257,9 +257,9 @@ class GirGhee extends Component{
                 <div className="pdtImages">
                     <div className="images">
                         <img className="full"  src={product.photos[0]} />
-                        <img className="small first-one" src={product.photos[1]} onMouseOver={this.onMousehover1} onMouseOut={this.onMouseout1}/>
-                        <img className="small" src={product.photos[2]} onMouseOver={this.onMousehover2} onMouseOut={this.onMouseout2}/>
-                        <img className="small" src={product.photos[3]} onMouseOver={this.onMousehover3} onMouseOut={this.onMouseout3}/>
+                        <img className="small first-one" src={product.photos[2]} onMouseOver={this.onMousehover1} onMouseOut={this.onMouseout1}/>
+                        <img className="small" src={product.photos[3]} onMouseOver={this.onMousehover2} onMouseOut={this.onMouseout2}/>
+                        <img className="small" src={product.photos[4]} onMouseOver={this.onMousehover3} onMouseOut={this.onMouseout3}/>
                     </div>
                     <div className="pdtMatter">
                         {hovered1 && <div className="hover1" style={style1}><img className="imghovered" src={product.photos[2]}/> </div>}
