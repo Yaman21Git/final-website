@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/final-website/static/css/main.1e8c5964.chunk.css",
-    "main.js": "/final-website/static/js/main.2c551dbc.chunk.js",
-    "main.js.map": "/final-website/static/js/main.2c551dbc.chunk.js.map",
+    "main.css": "/final-website/static/css/main.23ead439.chunk.css",
+    "main.js": "/final-website/static/js/main.8b676c0d.chunk.js",
+    "main.js.map": "/final-website/static/js/main.8b676c0d.chunk.js.map",
     "runtime-main.js": "/final-website/static/js/runtime-main.dbd586de.js",
     "runtime-main.js.map": "/final-website/static/js/runtime-main.dbd586de.js.map",
     "static/css/2.97503911.chunk.css": "/final-website/static/css/2.97503911.chunk.css",
-    "static/js/2.07fb1bcf.chunk.js": "/final-website/static/js/2.07fb1bcf.chunk.js",
-    "static/js/2.07fb1bcf.chunk.js.map": "/final-website/static/js/2.07fb1bcf.chunk.js.map",
+    "static/js/2.aacb0ab8.chunk.js": "/final-website/static/js/2.aacb0ab8.chunk.js",
+    "static/js/2.aacb0ab8.chunk.js.map": "/final-website/static/js/2.aacb0ab8.chunk.js.map",
     "index.html": "/final-website/index.html",
     "static/css/2.97503911.chunk.css.map": "/final-website/static/css/2.97503911.chunk.css.map",
-    "static/css/main.1e8c5964.chunk.css.map": "/final-website/static/css/main.1e8c5964.chunk.css.map",
-    "static/js/2.07fb1bcf.chunk.js.LICENSE.txt": "/final-website/static/js/2.07fb1bcf.chunk.js.LICENSE.txt",
+    "static/css/main.23ead439.chunk.css.map": "/final-website/static/css/main.23ead439.chunk.css.map",
+    "static/js/2.aacb0ab8.chunk.js.LICENSE.txt": "/final-website/static/js/2.aacb0ab8.chunk.js.LICENSE.txt",
     "static/media/01.dc94d944.jpg": "/final-website/static/media/01.dc94d944.jpg",
     "static/media/121-Black-Pepper-Powder.1b4da7ef.jpg": "/final-website/static/media/121-Black-Pepper-Powder.1b4da7ef.jpg",
     "static/media/123 Black-Pepper-Whole.18b66b7a.jpg": "/final-website/static/media/123 Black-Pepper-Whole.18b66b7a.jpg",
@@ -30,7 +30,6 @@
     "static/media/139-Arhar.3a81e09b.jpg": "/final-website/static/media/139-Arhar.3a81e09b.jpg",
     "static/media/142-Chana-.5a94e8cc.jpg": "/final-website/static/media/142-Chana-.5a94e8cc.jpg",
     "static/media/143-chick-pea.e631e350.jpg": "/final-website/static/media/143-chick-pea.e631e350.jpg",
-    "static/media/144-Chitra-Kidney-Beans.8368b977.jpg": "/final-website/static/media/144-Chitra-Kidney-Beans.8368b977.jpg",
     "static/media/148-Red-Kidney-Beans-.84e8f05e.jpg": "/final-website/static/media/148-Red-Kidney-Beans-.84e8f05e.jpg",
     "static/media/149-Urad.ea867897.jpg": "/final-website/static/media/149-Urad.ea867897.jpg",
     "static/media/150-Wheat-Flour.a9b72903.jpg": "/final-website/static/media/150-Wheat-Flour.a9b72903.jpg",
@@ -68,7 +67,6 @@
     "static/media/Navbar.css": "/final-website/static/media/ABUBABA LOGO.0d6f9f19.png",
     "static/media/Trending.css": "/final-website/static/media/Background-01.e5cfc56f.jpg",
     "static/media/DSC01648.b924b0bf.jpg": "/final-website/static/media/DSC01648.b924b0bf.jpg",
-    "static/media/DSC02735.e56df518.jpg": "/final-website/static/media/DSC02735.e56df518.jpg",
     "static/media/Ellipse 1.e4ff4141.png": "/final-website/static/media/Ellipse 1.e4ff4141.png",
     "static/media/Ellipse 2.633d65c1.png": "/final-website/static/media/Ellipse 2.633d65c1.png",
     "static/media/Ellipse 3.7d312a87.png": "/final-website/static/media/Ellipse 3.7d312a87.png",
@@ -95,8 +93,8 @@
   "entrypoints": [
     "static/js/runtime-main.dbd586de.js",
     "static/css/2.97503911.chunk.css",
-    "static/js/2.07fb1bcf.chunk.js",
-    "static/css/main.1e8c5964.chunk.css",
-    "static/js/main.2c551dbc.chunk.js"
+    "static/js/2.aacb0ab8.chunk.js",
+    "static/css/main.23ead439.chunk.css",
+    "static/js/main.8b676c0d.chunk.js"
   ]
 }
