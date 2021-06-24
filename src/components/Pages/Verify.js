@@ -38,6 +38,10 @@ class Verify extends Component{
       })
    }
 
+   componentWillUnmount = () => {
+      window.location.reload();
+   }
+   
    confirmPayment = (response) => {
       const {a, c, d} = this.state;
       

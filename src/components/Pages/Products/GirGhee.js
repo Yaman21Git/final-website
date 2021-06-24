@@ -111,7 +111,7 @@ class GirGhee extends Component{
             <h6>Item added to cart</h6>
             </div>, {
             position: "top-center",
-            autoClose: true,
+            autoClose: false,
             closeOnClick: true,
             pauseOnHover: false,
             draggable: true,
@@ -120,7 +120,7 @@ class GirGhee extends Component{
         this.setState({
             redirectToCart: str
         })
-        // window.location.reload()
+        window.location.reload()
     }
 
     onMousehover1 = e => {

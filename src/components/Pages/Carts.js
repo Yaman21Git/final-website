@@ -296,7 +296,7 @@ class Cart extends Component {
          c: cipherCart,
          p: cipherProduct
       })
-      // window.location.reload();
+      window.location.reload();
    }
    
    handleInput = (event) => {

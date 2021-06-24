@@ -42,12 +42,12 @@ export default function CommonSix(){
             <h6>Item added to cart</h6>
             </div>, {
             position: "top-center",
-            autoClose: true,
+            autoClose: false,
             closeOnClick: true,
             pauseOnHover: false,
             draggable: true,
         });
-        // window.location.reload();
+        window.location.reload();
     }
 
     return (
