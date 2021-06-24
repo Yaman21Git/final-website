@@ -15,6 +15,7 @@ import star from '../../images2/4 start.png'
 //import Footer from '../Footer';
 import pickles from '../../images2/picklesNew.png'
 import { newsletter } from './product';
+// import ReactPlayer from "react-player";
 
 const index0=[0,1];
 const index1=[0];
@@ -85,6 +86,9 @@ class Home extends Component{
       {window.innerWidth<=680&&<Link to="/contactus"><button type="button" className="readmore_last">Read More → </button></Link>}
       </div>
       <Cards />
+      {/* <ReactPlayer
+        url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"
+      /> */}
       <AbubabaOrg/>
       <Trending/>
       <HomeBlog/>
