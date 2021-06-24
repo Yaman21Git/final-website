@@ -331,7 +331,7 @@
     min-width:5vw;
     max-height: 5.4vw;
     margin-top: 1%;
-    margin-left: -3%;
+    margin-left: -4%;
   }
 
   .icons .items-in-cart{
@@ -340,6 +340,7 @@
     width:4vw;
     margin-left: -5.4%;
     margin-top: -1%;
+    padding-top: 0.3%;
   }
 
   .hidden{
