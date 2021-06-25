@@ -117,10 +117,12 @@ class GirGhee extends Component{
             draggable: true,
         });
         
-        this.setState({
-            redirectToCart: str
-        })
-        window.location.reload()
+        if(str){
+            this.setState({
+                redirectToCart: str
+            })
+            window.location.reload()
+        }
     }
 
     onMousehover1 = e => {
