@@ -4,6 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const bf_Array=["Pickles & Chutney","Breakfast Bites","Superfoods","Masala","Spices","Exotic Seasonings","Pulses","Honey","Ghee","Oil","Juices","Coming Soon"];
 
 function TrendingItem(props) {
   
@@ -13,8 +14,12 @@ function TrendingItem(props) {
   }
 
   var bigflag=false;
-  if(props.text==="Pickles & Chutney"){
-    bigflag=true;
+
+  for(var i=0; i<bf_Array.size(); i++){
+    if(props.text===bf_Array[i]){
+      bigflag=true;
+      break;
+    }
   }
 
   // var flag = (props.text === "Royal Saffron White Honey" ? true : false);
