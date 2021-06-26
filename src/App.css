@@ -712,6 +712,11 @@
     margin-left: 53%;
 }
 
+.youtube{
+  width:100%;
+  background-color: #F6EFE5;
+}
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -720,11 +725,22 @@
 }
 
 .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  margin-left: 15%;
+  margin-right: auto;
+  height: 70%;
+  width: 70%;
   position: absolute;
+}
+
+@media screen and (max-width: 680px){
+  .video-responsive iframe {
+    margin-left: 0%;
+    margin-top: 5%;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }
 
 .abubaba_org-container {

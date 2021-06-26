@@ -76,7 +76,6 @@ class GirGhee extends Component{
     addToCart = (str) => {
         const {product, productId, quantity} = this.state
         if (!(localStorage.getItem("cart"))){
-            console.log(quantity);
             const details = {
                 id: productId,
                 name: product.name,
@@ -89,7 +88,6 @@ class GirGhee extends Component{
             var flag = false;
             var array = JSON.parse(localStorage.getItem("cart"));
             
-            console.log(array);
             for(var i=0; i<array.length; i++){
                 if(productId === array[i].id){
                     flag = true;
@@ -121,7 +119,9 @@ class GirGhee extends Component{
             this.setState({
                 redirectToCart: str
             })
-            window.location.reload()
+        }
+        else{
+            window.location.reload();
         }
     }
 
