@@ -15,7 +15,7 @@ import star from '../../images2/4 start.png'
 //import Footer from '../Footer';
 import pickles from '../../images2/picklesNew.png'
 import { newsletter } from './product';
-import YoutubeEmbed from "./YoutubeEmbed";
+import YoutubeEmbed from "../YoutubeEmbed";
 // import ReactPlayer from "react-player";
 
 const index0=[0,1];
@@ -90,8 +90,8 @@ class Home extends Component{
       {/* <ReactPlayer
         url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"
       /> */}
-      <AbubabaOrg/>
-      <YoutubeEmbed embedId="rokGy0huYEA" />
+      {/* <AbubabaOrg/> */}
+      <div className="youtube"><YoutubeEmbed embedId="rokGy0huYEA" /></div>
       <Trending/>
       <HomeBlog/>
       <div className="clientTest">

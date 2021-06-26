@@ -12,6 +12,11 @@ function TrendingItem(props) {
     flag=true;
   }
 
+  var bigflag=false;
+  if(props.text==="Pickles & Chutney"){
+    bigflag=true;
+  }
+
   // var flag = (props.text === "Royal Saffron White Honey" ? true : false);
 
   const addToCart = (e) => {
@@ -79,9 +84,9 @@ function TrendingItem(props) {
           </figure>
           <div className='trending_item_info'>
                 { !flag ? 
-                  (<h2> {props.text} </h2> ) : 
+                  ( bigflag ? <h2 className="bc_text"> {props.text} </h2> : <h2> {props.text} </h2> ) : 
                   (<h2 className="just-three"> {props.text} </h2> ) 
-                } 
+                }
 
               { !props.show && <h3> ₹ {props.price}.00 </h3> } 
               { !props.show && <Link onClick={event => addToCart(event)} style={{textDecoration:"none", cursor: "pointer"}} ><h5 className='trending_item_text'>Add to cart +</h5></Link>}

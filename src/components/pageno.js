@@ -7,7 +7,7 @@ class Free extends Component{
         return(
             <>
                <div className="free-order">
-                <p className="simple-line">Free Delivery for orders above ₹ 499</p>
+                <p className="simple-line">Free Delivery for orders above ₹ 999</p>
                </div>
             </>
         );
