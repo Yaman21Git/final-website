@@ -15,7 +15,7 @@ function TrendingItem(props) {
 
   var bigflag=false;
 
-  for(var i=0; i<bf_Array.size(); i++){
+  for(var i=0; i<bf_Array.length; i++){
     if(props.text===bf_Array[i]){
       bigflag=true;
       break;
