@@ -713,6 +713,7 @@
 }
 
 .youtube{
+  height: 38vw;
   width:100%;
   background-color: #F6EFE5;
 }
@@ -733,6 +734,12 @@
 }
 
 @media screen and (max-width: 680px){
+  .youtube{
+    height: 54vw;
+    width:100%;
+    background-color: #F6EFE5;
+  }
+
   .video-responsive iframe {
     margin-left: 0%;
     margin-top: 5%;
