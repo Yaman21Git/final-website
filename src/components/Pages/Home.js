@@ -8,9 +8,9 @@ import AbubabaOrg from '../AbubabaOrg';
 import Trending from '../Trending'
 import { Link } from 'react-router-dom';
 import ClientsItem from '../ClientsItem'
-import img0 from '../../images2/Ellipse 1.png'
-import img1 from '../../images2/Ellipse 2.png'
-import img2 from '../../images2/Ellipse 3.png'
+import img0 from '../../images2/person1 (1).jpeg'
+import img1 from '../../images2/person1 (2).jpeg'
+import img2 from '../../images2/person1 (3).jpeg'
 import star from '../../images2/4 start.png'
 //import Footer from '../Footer';
 import pickles from '../../images2/picklesNew.png'
@@ -31,7 +31,7 @@ class Home extends Component{
         name:['Sharon Grover', 'Shubham Verma'],
         name1:['Shalini Kaur'],
         // stars:['<i class="fas fa-star"></i>','<i class="fas fa-star"></i>','<i class="fas fa-star"></i>'],
-        description:['Amazing taste, but more healthy. Glad to have bought from Abubaba Orgainic.','Perfectly blended spices in every pack I ordered makes cooking easy and delicious'],
+        description:['The products are as amazing as the packaging. It come with the goodness of health. Along with exclusive range of products.',"I recently tried 24k Luxury Honey. I'm still fascinated with the presence of gold flakes in this amazing Honey"],
         description1:['The varied choices for honey makes things really interesting. I will be ordering them all, love the Tulsi honey already.'],
         showMessage0:false,
         showMessage1:false,
